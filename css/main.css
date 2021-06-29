@@ -1,3 +1,7 @@
+div{
+    border: 1px solid black;
+}
+
 #google-image{
 
     display: flex;
@@ -5,16 +9,55 @@
     justify-content: center;
 }
 
-#search-text-box
-{
+#search-text-box {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+#search-form {
+    display: block;
+    width: 320px;
+}
+
+#search-buttons {
     display:flex;
     flex-direction: row;
     justify-content: center;
 }
+
+
+
 
 #search-form{
     border: none;
     border: solid 1px #202124;
     height: 30px;
     border-radius: 25px;
+}
+
+.topnav{
+    display: flex;
+    flex-direction: row;
+}
+
+.bottomnav{
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.right{
+    width:50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
