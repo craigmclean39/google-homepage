@@ -1,5 +1,5 @@
 div{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 body{
@@ -11,6 +11,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 197px 10px 27px 10px;
 }
 
 #search-text-box {
@@ -19,18 +20,24 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 #search-form {
     display: block;
-    width: 320px;
+    width: 585px;
 }
 
 #search-buttons {
     display:flex;
     flex-direction: row;
     justify-content: center;
+    padding: 35px 0px 468px 0px;
+}
+
+#search-buttons input{
+    margin: 0px 10px 0px 10px;
+    /*background-color: red;*/
 }
 
 
@@ -39,7 +46,7 @@ body{
 #search-form{
     border: none;
     border: solid 1px #202124;
-    height: 30px;
+    height: 35px;
     border-radius: 25px;
 }
 
@@ -47,20 +54,25 @@ body{
     display: flex;
     flex-direction: row;
     font-size: 14px;
+    /*border: solid 1px blue;*/
 }
 
 .topnav a{
-    padding: 10px 10px;
+    padding: 22px 9px 20px 9px;
+    /*border: solid 1px red;*/
 }
 
 
 .bottomnav{
     display: flex;
     flex-direction: row;
+    font-size: 14px;
+    background-color: #F2F2F2;
+    border-top: solid 1px #323232;
 }
 
 .bottomnav a{
-    padding: 10px 10px;
+    padding: 15px 10px;
 }
 
 .left{
@@ -69,6 +81,7 @@ body{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 15px;
 }
 .right{
     width:50%;
@@ -76,4 +89,22 @@ body{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+}
+
+.simple-link:link{
+    color:#333333;
+    text-decoration: none;
+}
+.simple-link:hover{
+    color:#333333;
+    /*text-decoration: none;*/
+    text-decoration: underline;
+}
+.simple-link:visited{
+    color:#333333;
+    text-decoration: none;
+}
+.simple-link:active{
+    color:#333333;
+    text-decoration: underline;
 }
