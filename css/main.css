@@ -5,6 +5,11 @@ div{
 body{
     font-family:Arial, Helvetica, sans-serif;
 }
+#app-img{
+    height: 25px;
+    width: 25px;
+    filter: invert(38%) sepia(8%) saturate(296%) hue-rotate(173deg) brightness(99%) contrast(94%);
+}
 
 #google-image{
 
@@ -20,34 +25,78 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*border: 1px solid black;*/
+}
+
+#search-img{
+    height: 20px;
+    width: 20px;
+    padding: 0px 18px;
+    filter: invert(38%) sepia(8%) saturate(296%) hue-rotate(173deg) brightness(99%) contrast(94%);
+}
+
+#mic-img{
+    height: 25px;
+    width: 25px;
+    padding: 0px 18px;
+    filter: invert(38%) sepia(8%) saturate(296%) hue-rotate(173deg) brightness(99%) contrast(94%);
+}
+
+
+#search-outline {
+    border: 1px solid rgb(218, 220, 224);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 45px;
+    border-radius: 25px;
+}
+
+#search-outline:hover {
+    border-style:solid;
+    border-color: rgb(218, 220, 224);
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
 #search-form {
     display: block;
-    width: 585px;
+    width: 475px;
+    font-size: 16px;
 }
 
 #search-buttons {
     display:flex;
     flex-direction: row;
     justify-content: center;
-    padding: 35px 0px 468px 0px;
+    padding: 35px 0px 456px 0px;
 }
 
 #search-buttons input{
+    height: 35px;
     margin: 0px 10px 0px 10px;
-    /*background-color: red;*/
+    padding: 10px 15px;
+    background-color: #F8F9FA;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+#search-buttons input:hover{
+    border-style:solid;
+    border-color: rgb(218, 220, 224);
+    box-shadow: 0 1px 1px rgba(0, 0 ,0, .1);
 }
 
 
 
 
 #search-form{
-    border: none;
-    border: solid 1px #202124;
-    height: 35px;
-    border-radius: 25px;
+    border:none;
+}
+#search-form:focus{
+    border:none;
+    outline:none;
 }
 
 .topnav{
@@ -68,7 +117,7 @@ body{
     flex-direction: row;
     font-size: 14px;
     background-color: #F2F2F2;
-    border-top: solid 1px #323232;
+    border-top: solid 1px #dadce0;
 }
 
 .bottomnav a{
